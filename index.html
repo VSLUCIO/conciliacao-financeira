@@ -1,66 +1,44 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
- 
 <head>
-  <meta charset="UTF-8">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conciliação de Dados Sob Demanda | Auditoria e Validação Urgente</title>
+<meta name="description" content="Conciliação, auditoria e validação de dados sob demanda. Compare bases, encontre divergências e receba respostas dentro do prazo disponível.">
+<style>
+:root{font-family:Inter,system-ui,Arial,sans-serif;color:#17233a;background:#f7f9fc}*{box-sizing:border-box}body{margin:0}main{max-width:1040px;margin:auto;padding:28px 22px 70px}header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0 48px}.brand{font-weight:800;color:#081b3b}.tag{font-size:13px;color:#53647b}.hero{padding:24px 0 42px}.eyebrow{font-size:14px;font-weight:800;letter-spacing:.09em;color:#007f70;margin:0 0 20px}.hero h3{font-size:clamp(22px,3vw,30px);color:#091b3c;margin:26px 0 10px}.hero p{margin:12px 0}.hero strong{color:#10284a}h1{font-size:clamp(34px,5vw,56px);line-height:1.12;max-width:850px;margin:0 0 20px;color:#091b3c}h2{font-size:clamp(24px,3vw,34px);margin:0 0 16px;color:#091b3c}p{font-size:17px;line-height:1.7;color:#47566b;max-width:820px}.cta{display:inline-block;background:#007f70;color:#fff;text-decoration:none;padding:15px 22px;border-radius:9px;font-weight:700;margin-top:12px}.secondary{background:#e8f4f7;color:#07556c}.section{margin-top:60px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tile{background:white;border:1px solid #e1e8f0;border-radius:12px;padding:22px}.tile b{display:block;margin-bottom:8px;color:#0a2345}.case{background:white;border:1px solid #e1e8f0;border-radius:14px;overflow:hidden}.case img{display:block;width:100%;height:auto}.case-copy{padding:22px}.note{font-size:13px;color:#6a7789}footer{border-top:1px solid #dce5ee;margin-top:65px;padding-top:22px;font-size:13px;color:#657287}@media(max-width:700px){header{padding-bottom:20px}.grid{grid-template-columns:1fr}.hero{padding-top:10px}}
 
-  <meta name="google-site-verification" content="CYQyIvPNj8g3QidbtdVbSTyZ7MzsljPaCPretQdkGu4" />
+.demo-intro{max-width:850px}.demo-step{margin:28px 0 42px;background:#fff;border:1px solid #dfe7f1;border-radius:15px;overflow:hidden;box-shadow:0 6px 24px rgba(13,33,65,.035)}
+.demo-step .step-head{padding:18px 22px 15px;display:flex;gap:15px;align-items:flex-start}.step-number{background:#e3f6fa;color:#087c95;font-weight:800;padding:8px 11px;border-radius:9px;font-size:14px;flex:none}.step-head h3{margin:0 0 5px;color:#10284a;font-size:21px}.step-head p{margin:0;font-size:15px;line-height:1.5}.demo-step img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:contain;background:#f4f7fb}.demo-foot{background:#eaf3f8;padding:18px 22px;border-radius:12px;margin-top:18px}.demo-foot p{margin:0;font-size:15px}
+@media(max-width:700px){.demo-step .step-head{padding:15px}.step-head h3{font-size:18px}}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.pricing{background:#fff;border:1px solid #dce7ee;border-radius:16px;padding:26px;margin-top:40px}.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.pricing-item{background:#f1f7fa;border-radius:12px;padding:20px}.pricing-label{font-size:14px;font-weight:700;color:#52657b;margin:0}.pricing-value{font-size:clamp(26px,4vw,38px);font-weight:800;color:#09274a;margin:7px 0}.pricing .note{margin:15px 0 0}@media(max-width:700px){.pricing-grid{grid-template-columns:1fr}}
 
-  <link rel="stylesheet" href="style.css">   
-
-  <title>Conciliação Financeira e de Dados | Serviços e Automação</title>
-
-   <meta name="description"
-      content="Serviços de conciliação financeira e de dados. Identifique divergências entre vendas, faturamento, recebimentos, bancos, planilhas e sistemas.">
-
-        
-  <link rel="canonical"
-        href="https://vslucio.github.io/conciliacao-financeira/">
+/* Identidade visual azul e branco, baseada na referência aprovada */
+:root{color:#10284a;background:#eff5fa}body{background:#eff5fa;color:#10284a}main{max-width:1180px;padding:0 24px 40px}header{background:#fff;margin:0 -24px;padding:18px 34px;box-shadow:0 2px 10px rgba(10,42,77,.06)}.brand{color:#10284a}.tag{color:#55708e}
+.hero{background:linear-gradient(115deg,#173959 0%,#205887 60%,#2267a0 100%);margin:0 -24px;padding:72px max(32px,calc((100vw - 1000px)/2)) 76px;text-align:center;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;left:-5%;right:-5%;bottom:-75px;height:120px;border-radius:50%;background:rgba(65,143,213,.15);pointer-events:none}.hero h1{color:white;max-width:950px;margin:0 auto 28px;font-size:clamp(32px,4.1vw,54px)}.hero p,.hero strong,.hero h3{color:#fff;max-width:840px;margin:13px auto}.hero .eyebrow{color:#d8ebff}.hero .cta{background:#fff;color:#0e3157;box-shadow:0 4px 15px #102b4560;position:relative;z-index:1}
+h2{color:#10284a;font-size:clamp(24px,2.8vw,32px)}.section{margin-top:24px;background:#fff;border-radius:13px;padding:28px 30px;box-shadow:0 4px 20px rgba(17,45,79,.055)}.section:first-of-type{margin-top:26px}.tile{box-shadow:0 4px 15px rgba(14,45,80,.045);border-color:#e9f0f7;min-height:142px}.tile b{color:#10284a}.eyebrow{color:#1477d2}.cta{background:#0879ee;border-radius:7px}.cta.secondary{background:#0879ee;color:#fff}.pricing{margin-top:24px;border:0;box-shadow:0 4px 20px rgba(17,45,79,.055);padding:28px 30px}.pricing-item{background:#e6f3fc}.pricing-value{color:#10284a}.pricing .note{max-width:none}.section#tecnologia p{max-width:1000px}
+#projeto{background:transparent;box-shadow:none;padding:12px 0}#projeto .demo-intro{max-width:1000px}#projeto .demo-step{display:inline-flex;vertical-align:top;flex-direction:column;width:calc(33.333% - 15px);margin:8px 10px 18px 0;box-shadow:0 4px 15px rgba(14,45,80,.08);border-radius:10px}#projeto .demo-step .step-head{order:2;padding:14px;gap:8px}#projeto .demo-step .step-head h3{font-size:15px}#projeto .demo-step .step-head p{font-size:12px}#projeto .step-number{font-size:12px;padding:5px 7px}#projeto .demo-step img{order:1;aspect-ratio:16/9;object-fit:contain;background:#fff}.demo-foot{background:linear-gradient(110deg,#143e69,#0d5793);padding:28px;border-radius:12px}.demo-foot p,.demo-foot strong{color:white;max-width:none}footer{background:#143e69;color:#fff;margin:26px -24px -40px;padding:25px 34px;border:0}
+@media(max-width:900px){#projeto .demo-step{width:calc(50% - 14px)}.hero{padding:55px 35px}}@media(max-width:650px){main{padding:0 14px 35px}header{margin:0 -14px;padding:17px 18px;flex-wrap:wrap}.hero{margin:0 -14px;padding:45px 21px 55px}.hero h1{font-size:32px}.hero p{font-size:15px}.section,.pricing{padding:22px 18px}#projeto .demo-step{width:100%;margin:10px 0}footer{margin:20px -14px -35px}.grid,.pricing-grid{grid-template-columns:1fr}}
+</style>
 </head>
+<body><main>
+<header><div class="brand">Tecnologia e Desenvolvimento</div><span class="tag">Conciliação • Dados • Automação</span></header>
+<section class="hero">
+<p class="eyebrow">CONCILIAÇÃO DE DADOS SOB DEMANDA</p>
+<h1>Seus números não fecham e o prazo está acabando? Nós ajudamos a encontrar a diferença.</h1>
+<p>Você tem <strong>duas, três ou várias bases de dados</strong> que deveriam apresentar os mesmos resultados, mas os números simplesmente não batem?</p>
+<p>Talvez seja <strong>conciliação bancária</strong>, fechamento financeiro, uma auditoria, uma conciliação de vendas, recebíveis, taxas, estoque ou uma validação urgente entre diferentes sistemas.</p>
+<p>E existe um problema adicional:</p>
+<h3>Você precisa da resposta rápido.</h3>
+<p>Não é o momento de iniciar um longo projeto de desenvolvimento ou implementar uma nova plataforma. Você precisa <strong>comparar os dados, localizar as divergências e entender onde está o problema dentro do prazo disponível.</strong></p>
+<p>É exatamente para isso que oferecemos o serviço de <strong>Conciliação, Auditoria e Validação de Dados Sob Demanda.</strong></p>
+<a class="cta" href="#contato">Solicitar orçamento</a>
+</section>
 
-<body>
-  <header>
-    <h1>Conciliação Financeira e de Dados Automatizada</h1>
-
-    <p>
-      Identifique divergências entre extratos bancários,
-      vendas, faturamento e recebimentos com automação
-      e processamento de grandes volumes de dados.
-    </p>
-
-    <a href="https://www.linkedin.com/company/valdemarlucio/services/">
-      Solicitar proposta
-    </a>
-  </header>
-
-  <main>
-    <section>
-      <h2>Soluções para sua empresa</h2>
-
-      <p>
-        Conciliação de dados entre diferentes sistemas,
-        planilhas Excel, arquivos CSV, XML e bancos de dados.
-      </p>
-
-      <p>
-        Automação com SQL e Python para identificar
-        inconsistências e reduzir atividades manuais.
-      </p>
-    </section>
-
-    <section>
-      <h2>Entregáveis</h2>
-
-      <ul>
-        <li>Relatório executivo em PDF</li>
-        <li>Arquivo CSV com conciliação linha a linha</li>
-        <li>Identificação de divergências</li>
-        <li>Recomendações para correção</li>
-      </ul>
-    </section>
-  </main>
-</body>
-</html>
+<section class="section"><h2>Como funciona</h2><div class="grid"><div class="tile"><b>1. Entendimento</b>Identificamos fontes, regras de conciliação, volume e prazo.</div><div class="tile"><b>2. Processamento</b>Comparamos registros e isolamos diferenças com SQL, Python e automação.</div><div class="tile"><b>3. Entrega</b>Entregamos um relatório em PDF com as divergências identificadas, indicadores e recomendações, acompanhado de um arquivo CSV ou Excel que demonstra as diferenças de cada transação, linha a linha.</div></div></section>
+<section class="section" id="tecnologia"><p class="eyebrow">TECNOLOGIA E CAPACIDADE DE PROCESSAMENTO</p><h2>Tecnologia de ponta aplicada à conciliação de dados</h2><p>Utilizamos <strong>Inteligência Artificial, Python, SQL e ferramentas de processamento de dados de alta capacidade</strong> para analisar informações de diferentes sistemas, bancos de dados e arquivos, incluindo planilhas, CSV e XML.</p><p>Combinamos automação, cruzamento de registros e regras de validação para identificar divergências, duplicidades e inconsistências. Nossa abordagem permite trabalhar com <strong>grandes volumes de dados, inclusive milhões de registros</strong>, conforme as características e a complexidade de cada projeto.</p><p>A <strong>Inteligência Artificial pode apoiar a identificação e classificação de anomalias</strong>, com resultados verificados por critérios de conciliação e regras de negócio. Ao final, transformamos dados complexos em informações claras e acionáveis.</p></section>
+<section class="pricing" id="precos"><h2>Valores e prazos</h2><div class="pricing-grid"><div class="pricing-item"><p class="pricing-label">Pacotes de conciliação a partir de</p><p class="pricing-value">R$ 120</p><p>Orçamento definido conforme as fontes, o volume de registros e a complexidade da análise.</p></div><div class="pricing-item"><p class="pricing-label">Prazo estimado de entrega</p><p class="pricing-value">De 1 a 24 horas</p><p>Atendimento sob demanda para análises e conciliações com prazo reduzido.</p></div></div><p class="note">* Os valores e prazos dependem da complexidade do serviço, do volume de dados e das análises em andamento. A disponibilidade e o prazo final serão confirmados após a avaliação da necessidade.</p></section>
+<section class="section" id="contato"><h2>Solicite uma avaliação da sua necessidade</h2><p>Informe quais fontes precisam ser conciliadas, o volume aproximado de registros e o prazo desejado. Não envie dados financeiros confidenciais pelo WhatsApp; combinaremos um meio seguro de transferência quando necessário.</p><a class="cta secondary" href="https://wa.me/5511962465358?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20concilia%C3%A7%C3%A3o%20financeira%20e%20de%20dados." target="_blank" rel="noopener noreferrer">Iniciar conversa no WhatsApp</a><p class="note">Atendimento comercial via WhatsApp: (11) 96246-5358.</p></section>
+<section class="section" id="projeto"><p class="eyebrow">EXEMPLO DE ENTREGA</p><h2>Veja como os resultados são apresentados</h2><p class="demo-intro">Do cruzamento entre diferentes fontes até um relatório executivo com divergências classificadas, valores envolvidos e recomendações práticas. As imagens a seguir mostram um exemplo de apresentação da conciliação de Vendas, Faturamento e Recebimentos.</p><article class="demo-step"><div class="step-head"><span class="step-number">01</span><div><h3>Visão geral da conciliação</h3><p>48.720 transações analisadas em três fontes, com 95,2% conciliadas e 2.339 exceções isoladas.</p></div></div><img src="01-capa.jpg" alt="Etapa 1: Visão geral da conciliação. 48.720 transações analisadas em três fontes, com 95,2% conciliadas e 2.339 exceções isoladas." loading="lazy" decoding="async"></article><article class="demo-step"><div class="step-head"><span class="step-number">02</span><div><h3>Fontes de dados integradas</h3><p>Vendas em CSV, faturamento em Excel e recebimentos em XML, relacionados em uma visão única.</p></div></div><img src="02-fontes.jpg" alt="Etapa 2: Fontes de dados integradas. Vendas em CSV, faturamento em Excel e recebimentos em XML, relacionados em uma visão única." loading="lazy" decoding="async"></article><article class="demo-step"><div class="step-head"><span class="step-number">03</span><div><h3>Resultado executivo</h3><p>Indicadores de consistência e volume financeiro, destacando as transações conciliadas e o conjunto que exige análise.</p></div></div><img src="03-resultado.jpg" alt="Etapa 3: Resultado executivo. Indicadores de consistência e volume financeiro, destacando as transações conciliadas e o conjunto que exige análise." loading="lazy" decoding="async"></article><article class="demo-step"><div class="step-head"><span class="step-number">04</span><div><h3>Exceções detalhadas</h3><p>Classificação das divergências por tipo, quantidade de transações e valores associados.</p></div></div><img src="04-excecoes.jpg" alt="Etapa 4: Exceções detalhadas. Classificação das divergências por tipo, quantidade de transações e valores associados." loading="lazy" decoding="async"></article><article class="demo-step"><div class="step-head"><span class="step-number">05</span><div><h3>Priorização por impacto financeiro</h3><p>Organização das exceções em prioridades alta, média e baixa para orientar a análise.</p></div></div><img src="05-prioridades.jpg" alt="Etapa 5: Priorização por impacto financeiro. Organização das exceções em prioridades alta, média e baixa para orientar a análise." loading="lazy" decoding="async"></article><article class="demo-step"><div class="step-head"><span class="step-number">06</span><div><h3>Entrega e próximas ações</h3><p>Resumo das ocorrências e recomendações para validação, correção e prevenção de recorrências.</p></div></div><img src="06-recomendacoes.jpg" alt="Etapa 6: Entrega e próximas ações. Resumo das ocorrências e recomendações para validação, correção e prevenção de recorrências." loading="lazy" decoding="async"></article><div class="demo-foot"><p><strong>Entregáveis:</strong> relatório executivo em PDF com indicadores, divergências e recomendações; arquivo CSV ou Excel com a demonstração das diferenças linha a linha, incluindo a identificação das transações e as divergências encontradas. Valores associados às exceções indicam exposição para análise e não representam necessariamente perdas financeiras.</p></div></section>
+<footer>Conciliação financeira e de dados • Atendimento a empresas no Brasil</footer>
+</main></body></html>
